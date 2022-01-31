@@ -127,8 +127,8 @@ class _HomePageState extends State<HomePage> {
                 Row(
                   children: [
                     GestureDetector(
-                      onTapDown: (_) => _commandStack.add("+RF"),
-                      onTapUp: (_) => _commandStack.add("-RF"),
+                      onTapDown: (_) => _commandStack.add("+LF"),
+                      onTapUp: (_) => _commandStack.add("-LF"),
                       child: const Icon(
                         Icons.keyboard_arrow_left,
                         size: 60.0,
@@ -136,8 +136,8 @@ class _HomePageState extends State<HomePage> {
                     ),
                     const SizedBox(width: 15.0),
                     GestureDetector(
-                      onTapDown: (_) => _commandStack.add("+R"),
-                      onTapUp: (_) => _commandStack.add("-R"),
+                      onTapDown: (_) => _commandStack.add("+L"),
+                      onTapUp: (_) => _commandStack.add("-L"),
                       child: const Icon(
                         Icons.arrow_left,
                         size: 60.0,
@@ -145,8 +145,8 @@ class _HomePageState extends State<HomePage> {
                     ),
                     const Spacer(),
                     GestureDetector(
-                      onTapDown: (_) => _commandStack.add("+L"),
-                      onTapUp: (_) => _commandStack.add("-L"),
+                      onTapDown: (_) => _commandStack.add("+R"),
+                      onTapUp: (_) => _commandStack.add("-R"),
                       child: const Icon(
                         Icons.arrow_right,
                         size: 60.0,
@@ -154,8 +154,8 @@ class _HomePageState extends State<HomePage> {
                     ),
                     const SizedBox(width: 15.0),
                     GestureDetector(
-                      onTapDown: (_) => _commandStack.add("+LF"),
-                      onTapUp: (_) => _commandStack.add("-LF"),
+                      onTapDown: (_) => _commandStack.add("+RF"),
+                      onTapUp: (_) => _commandStack.add("-RF"),
                       child: const Icon(
                         Icons.keyboard_arrow_right,
                         size: 60.0,
