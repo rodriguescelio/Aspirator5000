@@ -1,6 +1,8 @@
+import 'package:aspirator5000/utils/device.dart';
 import 'package:aspirator5000/views/pages/splash.page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:get_it/get_it.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -8,6 +10,7 @@ void main() {
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,
   ]).then((_) {
+    GetIt.I.registerSingleton(Device());
     runApp(const MyApp());
   });
 }
